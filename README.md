@@ -1,11 +1,16 @@
-Git for version control
+User sign-up
 
-- check status
-- add the files and new changes to track
-- commit/discard the changes 
-- save your code to online repositories - Github, bitbucket
+- topic branch
+- create spec
 
-This is the repo for BDD course with Rails 5
-RSpec and Capybara
-- Write a scenario in a test file (feature will fail!)
-- Build the features ine by one until tested passes
+Signing up users
+- visit root
+- click on sign-up link
+- email
+- password
+- password confirmation
+
+- sign-up
+
+Invalid sign-up
+-do an invalid sign-up and ensure that it fails
