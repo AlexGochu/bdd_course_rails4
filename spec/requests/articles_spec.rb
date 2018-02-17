@@ -7,6 +7,7 @@ RSpec.describe "Article", type: :request do
     @fred = User.create(email: "fred@example.com", password: "password")
     @article = Article.create!(title: "Article one", body: "Body of article one", user: @john)
   end
+  
   describe 'DELETE /articles/:id' do
     context 'with non-signed in user' do
       before {delete "/articles/#{@article.id}"}
