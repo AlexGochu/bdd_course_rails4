@@ -6,12 +6,14 @@
   <div class="article-body">
     <%= @article.body %>
   </div>
-  <div class="edit-delete">
-    <%= link_to "Edit article", edit_article_path(@article), class: "btn btn-primary btn-lg btn-space" %>
-    <%= link_to "Delete article", article_path(@article), method: :delete,
-          data: {confirm: "Are you sure you want to delete article?"} , 
-          class: "btn btn-primary btn-lg btn-space"%>
-  </div>
+  <% if user_signed_in? && @article.user == current_user %>
+    <div class="edit-delete">
+      <%= link_to "Edit article", edit_article_path(@article), class: "btn btn-primary btn-lg btn-space" %>
+      <%= link_to "Delete article", article_path(@article), method: :delete,
+            data: {confirm: "Are you sure you want to delete article?"} , 
+            class: "btn btn-primary btn-lg btn-space"%>
+    </div>
+  <% end %>
   
    
 </article>
