@@ -11,7 +11,7 @@ RSpec.feature "Deleting an article" do
     visit "/"
     
     click_link @article.title
-    click_link "Delete article"
+    click_link "Delete Article"
     
     expect(page).to have_content("Article has been deleted")
     
