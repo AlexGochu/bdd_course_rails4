@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Article", type: :request do
+RSpec.describe "Articles", type: :request do
   
   before do
     @john = User.create(email: "john@example.com", password: "password")

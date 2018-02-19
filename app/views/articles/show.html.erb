@@ -63,7 +63,7 @@
           <%= comment.body %>
         </div>
         <div class="comment-time">
-          <% time_ago_in_words(comment.created_at) %>
+          <%= time_ago_in_words(comment.created_at) %>
           ago by <%= comment.user.email %>
         </div>
         <hr>
